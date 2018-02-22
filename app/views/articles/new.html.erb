@@ -3,23 +3,23 @@
     <div class="col">
         <%= form_for(@article, :html => { class: "form-horizontal", role: "form" }) do |f| %>
             <div class="form-group">
-                <div class="control-label col-1">
+                <div class="control-label col-md-1">
                     <%= f.label :title %>
                 </div>
-                <div class="col-11">
+                <div class="col-md-11">
                     <%= f.text_field :title, class: "form-control", placeholder: "Title of Article", autofocus: true %>
                 </div>
             </div>
             <div class="form-group">
-                <div class="control-label col-1">
+                <div class="control-label col-md-1">
                     <%= f.label :body %>
                 </div>
-                <div class="col-11">
-                    <%= f.text_area :body, class: "form-horizontal", rows: 10, placeholder: "Body of Article"%>
+                <div class="col-md-11">
+                    <%= f.text_area :body, class: "form-control", rows: 10, placeholder: "Body of Article"%>
                 </div>
             </div>
             <div class="form-group">
-                <div class="col">
+                <div class="col-md-12">
                     <%= f.submit class: "btn btn-primary btn-lg pull-right"%>
                 </div>
             </div>
